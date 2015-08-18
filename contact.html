@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta name="keywords" content="Peter Szocs,Szöcs Péter,szocs,pete,gepesz,gépész,Paks,Hungary,Lovassy,Veszprem,Wharton,upenn,resume,photos,contact,music,blog,kiraly,zsivany,manhattan,new york,astoria,bloomberg" />
+  <title>Peter Szocs</title>
+  <link href="css/nifty.css"  rel="stylesheet" type="text/css"/>
+  <link href="css/common.css" rel="stylesheet" type="text/css"/>
+  <script src="js/applesearch.js" type="text/javascript"></script>
+  <script src="js/nifty.js"       type="text/javascript"></script>
+  <script src="js/js.js"          type="text/javascript"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  <!--[if lt IE 7]>
+  <script defer src="js/pngfix.js" type="text/javascript"></script>
+  <![endif]-->
+</head>
+<body onload="Nifty('ul#nav a','small transparent top');
+              Nifty('div#box','transparent top bl');
+			  Rounded('label.form','#fff','small');
+			  loadMap();
+			  checkFeedback();">
+  <div id="menu">
+	<ul id="nav">
+	  <li><a href="home.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li class="activelink"><a href="contact.html">Contact</a></li>
+    </ul>
+	<br/>
+  </div>
+
+  <div id="box">
+    <!-- logo -->
+	<h1><a href="home.html"><img src="img/start.jpg" style="border:0px;"/>&nbsp;Peter Szocs</a></h1>
+	<span class="corner cornerTR">&nbsp;</span><!-- corner -->
+
+	<!-- search box -->
+	<div id="applesearch">
+	  <span class="sbox_l"></span>
+	  <span class="sbox">
+	    <input type="search" id="srch_fld" onkeyup="applesearch.onChange('srch_fld','srch_clear',event)" onclick="applesearch.onClick('srch_fld','srch_clear')" onblur="applesearch.onBlur('srch_fld')" value="Search..."/>
+	  </span>
+	  <span class="sbox_r" id="srch_clear"></span>
+	</div>
+
+	<!-- banner image -->
+	<div class="separator">&nbsp;</div>
+	<div><img id="bannerImg" src="img/banner_contact.jpg"/></div>
+	<div id="bannerText">contact</div>
+	<div class="separator">&nbsp;</div>
+
+	<!-- main screen area -->
+	<div id="container" style="	height:820px;">
+	  
+	  <!-- leftnav -->
+	  <div id="leftnav">
+	    <span class="mediumFont"><img src="img/signal.jpg"/>&nbsp;&nbsp;Contact</span><br/>
+	    <div style="margin:20px 0px 0px 0px;">
+		  I currently live in New York City where you can contact me at:
+		</div>
+	    <div style="margin:20px 0px 0px 0px;">
+		  <fieldset class="pseudoTable">
+		    <label>Phone:</label><span class="value">Private</span>
+		  </fieldset>
+		  <fieldset class="pseudoTable">
+		    <label>Fax:</label><span class="value">(+1) 917-522-2730</span>
+		  </fieldset>
+		  <fieldset class="pseudoTable">
+		    <label>Email:</label><span class="value"><a href="mailto:szocs.peter@gmail.com" title="Send me an email" style="text-decoration:underline;">szocs (dot) peter (at) gmail (dot) com</a></span>
+		  </fieldset>
+		  <fieldset class="pseudoTable">
+		    <label>Address:</label>
+			<span class="value">
+			  301 E 45th St., Apt 12A<br/>
+			  New York, NY 10017<br/>
+		      USA
+			</span>
+		  </fieldset>
+		</div>
+	  </div>
+
+	  <!-- content -->
+	  <div id="content">
+
+		<span class="mediumFont"><img src="img/internet.jpg"/>&nbsp;&nbsp;Location</span><br/>
+	    <div style="margin:20px 0px 0px 0px;">
+		  This map shows you where I live and work:
+		</div>
+        <div id="map" style="margin:30px 0px 40px 0px;width:540px; height:320px"></div><br/>
+       
+		<span class="mediumFont"><img src="img/announcement.jpg"/>&nbsp;&nbsp;Feedback</span><br/><br/>
+		Use the form below to send me a quick feedback:
+		<form method="post" action="cgi-bin/email.cgi">
+		  <input type="hidden" name="recipient" value="gepesz@gmail.com"/>
+		  <fieldset>
+			<label for="name" class="form">name: </label>
+			<input type="text" id="name" name="name"><br/>
+			<label for="email" class="form">email: </label>
+			<input type="text" id="email" name="email"><br/>
+			<label for="subject" class="form">subject: </label>
+			<input type="text" id="subject" name="subject"><br/>
+			<label for="message" class="form">message: </label>
+			<textarea id="message" name="message" rows="8" cols="20"></textarea><br/>
+			<input type="image" id="submit" src="img/button_send.jpg" border="0" style="width:100px;height:34px"/>
+		 </fieldset>
+		</form>
+	  
+	  </div><!-- end of content -->
+	</div><!-- end of container -->
+	
+	<!-- bottom -->
+	<div class="separator">&nbsp;</div>
+	<span id="copyright">Peter Szocs&nbsp;&copy;&nbsp;2014</span>
+	<span class="corner cornerBL">&nbsp;&nbsp;</span><!-- corner -->
+  </div>&nbsp;
+</body>
+</html>

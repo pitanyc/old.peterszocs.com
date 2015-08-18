@@ -1,0 +1,358 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow-x: hidden;
+}
+
+/* ----------  controls the background color of the rounded corners & the font type of the tabs  --------- */
+body {
+	background-color: #515151;
+	background-image: url('../img/bg.gif');
+    font: 70% Arial,sans-serif;
+}
+
+/* ----------  controls the link (href) styles  --------- */
+a, .href {
+	text-decoration: none;
+	color: #338500;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* ----------  needed for floating  --------- */
+br {
+	clear: both;
+}
+
+/* ----------  controls the style of various form elements  --------- */
+fieldset {
+	border: 0px solid #000;
+}
+
+fieldset label.form {
+	float: left;
+	display: inline;
+	width: 100px;
+    line-height: 18px;
+	margin: 5px 20px;
+	text-align: center;
+	background: #ffffff url('../img/arrow.jpg') no-repeat right center;
+}
+
+input,textarea {
+	margin: 3px 0 8px;
+	border-style: solid;
+	border-color: #666666 #999999 #999999 #666666;
+    border-width: 1px;
+	width: 340px;
+	background-color: #ffffa0;
+	overflow: auto;
+}
+
+img {
+	vertical-align: middle;
+}
+
+input {
+	height: 18px;
+}
+
+/* ----------  controls the submit button style on forms  --------- */
+input#submit {
+	margin: 5px 0 0 143px;
+	width: auto;
+	height: auto;
+	border: 0px solid #fff;
+	background-color: transparent;
+}
+
+/* ----------  controls the padding from the top  --------- */
+div#menu {
+	width: 880px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+ul#nav, ul#nav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ----------  controls the padding from the left  --------- */
+ul#nav {
+	margin-left: 465px;
+}
+
+ul#nav li {
+	float: left;
+	margin-right: 3px;
+	text-align: center;
+}
+
+/* ----------  controls the style of the INACTIVE tabs when NOT IN FOCUS  --------- */
+ul#nav a {
+	float: left;
+	width: 7em;
+	padding: 5px 0;
+	background: #888888;
+	text-decoration: none;
+	color: #444444;
+	font-weight: normal;
+}
+
+/* ----------  controls the style of the INACTIVE tabs when IN FOCUS  --------- */
+ul#nav a:hover {
+	background: #338500;
+	color: #ffffff;
+}
+
+/* ----------  controls the style of the ACTIVE tab  --------- */
+ul#nav li.activelink a,ul#nav li.activelink a:hover {
+	background: #D1DD33;
+	color: #333333;
+	font-weight: bold;
+}
+
+/* ----------  controls the width & background color of the box  --------- */
+div#box {
+	width: 880px;
+	background: #D1DD33;
+	/*background: #6fdc61;*/
+	/*background: #5dcb4b;*/
+	padding: 16px 0px 30px 0px;
+	margin: 0px auto 30px auto;
+    text-align: left;
+	border-right: solid 0.3em #2E2E2E;
+	border-bottom: solid 0.3em #2E2E2E;
+	position: relative;
+}
+
+/* ----------  the following 3 classes control the corner span fixes for the shadow effect  --------- */
+div#box span.corner {
+	background-image: url('../img/bg.gif');
+	/*background: red;*/
+	height: 0.5em;
+	width: 0.5em;
+	position: absolute;
+}
+
+span.cornerTR {
+	right: -0.5em;
+	top: 0;
+	line-height: 7px;
+}
+
+span.cornerBL {
+	bottom: -0.5em;
+	left: 0;
+	line-height: 3px;
+}
+
+/* ----------  controls the style of the logo text  --------- */
+h1 {
+	text-decoration: none;
+	font-family: "Trebuchet MS",Arial sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #338500;
+}
+
+/* ----------  controls the left margin of the logo  --------- */
+h1 {
+	margin: 0px 20px 10px 20px;
+}
+
+/* ----------  controls the banner image style  --------- */
+img#bannerImg {
+	width: 880px;
+	height: 64px;
+}
+
+/* ----------  controls the banner text style  --------- */
+div#bannerText {
+	font-size: 26px;
+	font-family: Arial,sans-serif;
+	font-weight: normal;
+	color: #eeeeee;
+	position: absolute;
+	left: 20px;
+	top: 72px;
+}
+
+/* ----------  controls the horizontal separator style  --------- */
+div.separator {
+	font-size: 2px;
+	background: #515151;
+}
+
+/* ----------  the following 6 classes control the search box style  --------- */
+#applesearch {
+	position: absolute;
+	right: 2em;
+	top: 2em;
+}
+
+#applesearch .sbox_l  {
+	background: #D1DD33 url('../img/srch_l.gif') no-repeat top left;
+	float: left;
+	width: 19px;
+	height: 19px;
+}
+
+/* safari hack! */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #applesearch .sbox_l  { width:0px; height:0px; }
+}
+
+#applesearch .sbox_r  {
+	background: #D1DD33 url('../img/srch_r.gif') no-repeat top left;
+	float: left;
+	width: 19px;
+	height: 19px;
+}
+
+/* safari hack! */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #applesearch .sbox_r  { width:0px; height:0px; }
+}
+
+#applesearch .sbox input {
+	background: #D1DD33 url('../img/srch_bg.gif') repeat-x top left;
+	float: left;
+	border: 0;
+	width: 142px;
+	height: 19px;
+	margin: 0px;
+	padding: 3px;
+	font: 11px/13px arial;
+	color: #000;
+}
+
+/* ----------  controls the container for the main content area  --------- */
+div#container {
+	width: 880px;
+	margin: 0 auto 20px;
+}
+
+/* ----------  controls the leftnav style  --------- */
+div#leftnav {
+	float: left;
+	width: 260px;
+	height: 100%;
+	padding: 20px 20px 0px 20px;
+	border-right: 1px solid #515151;
+}
+
+/* ----------  controls the content style  --------- */
+div#content {
+	float: left;
+	width: 558px;
+	padding: 20px 0px 0px 20px;
+	/*border-left: 1px solid #515151;*/
+}
+
+/* ----------  this is the style of the headshot img  --------- */
+.headshot {
+	border: 1px solid #515151;
+	float: right;
+	top: 0px;
+	margin-right: 6em;
+}
+
+/* ----------  controls the style of the photo content selector (left hand side) of the photos page  --------- */
+div#photoAlbum {
+	float: left;
+	width: 240px;
+	height: 620px;
+	border: 0px solid red;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* ----------  controls the style of each photo set WHEN IN FOCUS (SELECTED) --------- */
+div.photoSetActive {
+	padding: 0px 0px 0px 20px;
+	text-decoration: none;
+	color: #333333;
+	background-color: #a9b50b;
+	font-weight: bold;
+	cursor: normal;
+}
+
+/* ----------  controls the style of each photo set WHEN NOT IN FOCUS --------- */
+div.photoSet {
+	padding: 0px 0px 0px 20px;
+	text-decoration: none;
+	color: #338500;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* ----------  controls the style of the photo content div of the photos page  --------- */
+div#photoContent {
+	float: right;
+}
+
+/* ----------  controls the style of playlists --------- */
+iframe.playlist {
+	width: 260px;
+	height: 180px;
+	margin-bottom: 20px;
+	border: none;
+}
+
+/* ----------  controls the style of individual songs --------- */
+iframe.song {
+	width: 180px;
+	height: 180px;
+	margin-bottom: 17px;
+	border: none;
+}
+
+/* ----------  the following 3 fields control the look&feel of the fake table  --------- */
+.pseudoTable {
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	margin: 0px 0px 10px 0px;
+}
+
+.pseudoTable label {
+	float: left;
+	font-size: 16px;
+	font-family: Arial sans-serif;
+	font-weight: bold;
+	color: #515151;
+}
+
+.pseudoTable span.value {
+	float: right; 
+	width: 60%;
+}
+
+/* ----------  controls the style of the medium fonts  --------- */
+.mediumFont {
+	font-size: 16px;
+	font-family: Arial sans-serif;
+	font-weight: bold;
+	color: #444444;
+}
+
+/* ----------  controls the style of the last update stamp on the bottom  --------- */
+span#lastUpdate {
+	color: #515151;
+	font-size: 10px;
+	float: left;
+	margin: 1em 0px 0px 20px;
+}
+
+/* ----------  controls the style of the copyright on the bottom  --------- */
+span#copyright {
+	color: #515151;
+	font-size: 10px;
+	float: right;
+	margin: 1em 1em 0px 0px;
+}
