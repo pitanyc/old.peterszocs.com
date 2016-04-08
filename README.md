@@ -1,6 +1,6 @@
 # peterszocs.com
 
-This is my old website.  It features a welcome page, a career section with full resume access, photos, music and contact information, along with fully working contact form.
+This was my first website. It features Resume, Photos, Music and Contact sections with a fully working contact form.
 
 ## Creator
 
